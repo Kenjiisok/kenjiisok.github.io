@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Kenji — Apps</title>
+    <meta name="description" content="Desenvolvedor independente. Criador do Citare — frases inspiradoras diárias.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f2ebe4;
+            color: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            line-height: 1.6;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1A1A1A; color: #f2ebe4; }
+            .card { background: #262626; }
+            .meta { color: #999; }
+        }
+        .card {
+            max-width: 560px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 36px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+        .icon {
+            font-family: "New York", Georgia, serif;
+            font-size: 56px;
+            color: #D97706;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .meta {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .app {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 20px;
+            background: rgba(217, 119, 6, 0.06);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.15s ease;
+        }
+        .app:hover { transform: translateY(-2px); }
+        .app-name { font-weight: 600; font-size: 17px; margin-bottom: 4px; }
+        .app-desc { font-size: 14px; color: #666; }
+        @media (prefers-color-scheme: dark) {
+            .app-desc { color: #aaa; }
+        }
+        .links {
+            margin-top: 32px;
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+        .links a {
+            color: #D97706;
+            text-decoration: none;
+        }
+        .links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <div class="icon">"</div>
+        <h1>Eduardo Kenji</h1>
+        <p class="meta">Desenvolvedor independente • Brasil</p>
+
+        <h2>Aplicativos</h2>
+        <a class="app" href="https://apps.apple.com/br/app/citare-frases-inspiradoras/id6771962884">
+            <div>
+                <div class="app-name">Citare — Frases Inspiradoras</div>
+                <div class="app-desc">Uma frase por dia, com curadoria de pensadores históricos. iOS.</div>
+            </div>
+        </a>
+
+        <div class="links">
+            <a href="https://kenjiisok.github.io/citare-privacy/">Privacidade</a>
+            <a href="mailto:contato.citare@gmail.com">Contato</a>
+        </div>
+    </main>
+</body>
+</html>
